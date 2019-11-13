@@ -13,6 +13,8 @@ $ python3 -m venv venv_for_flask
 
 $ . venv_for_flask/bin/activate
 
+$ cd Flask_Project/
+
 $ pip install -e .
 
 $ export FLASK_APP=flaskr
