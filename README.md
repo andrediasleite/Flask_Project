@@ -18,3 +18,10 @@ $ pip install -e .
 $ export FLASK_APP=flaskr
 
 $ export FLASK_ENV=development
+
+$ flask init-db
+
+$ flask run
+
+
+The web server should now run on localhost
