@@ -5,6 +5,8 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
 
+plt.switch_backend('Agg')
+
 #for the plots:
 import pandas as pd
 #import matplotlib.pyplot as plt
@@ -115,7 +117,7 @@ def create_figure4():
     #Filter columns
     subset = subset_row.loc[:,['country_long','odometer_km', 'damage_count']]
     #Checking the correlation using seaborn pairplot
-    pairgrid = sns.pairplot(subset, hue="country_long",palette="husl", aspect=1.2, size=1.8)
+    pairgrid = sns.pairplot(subset, hue="country_long",palette="husl", aspect=1.2, height=1.8)
 
     pairgrid.fig.suptitle("Correlation between mileage, damage counter and countries",fontsize=8)
 
