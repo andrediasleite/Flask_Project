@@ -1,8 +1,8 @@
 # To run:
-# . venv/bin/activate  - gets you virtual environment
-#$ export FLASK_APP=application.py
-#export FLASK_DEBUG=1   - turns on debug
-#$ flask run OR flask views.py if don't turn on virtual environment
+# . venv_for_flask/bin/activate  - gets you virtual environment
+#$ export FLASK_APP=flaskr
+#$ export FLASK_ENV=development   - turns on debug / dev mode
+#$ flask run
 
 import os
 import io
